@@ -37,10 +37,25 @@ If all it's ok, you'll be able to see a lot of AFL crashes :)
 
 The winner of each challenge will receive a coupon to spend in [GitHub Shop](https://github.myshopify.com/). Second place will also be awarded.
 
-## Fuzz Challenge 1 - UNDISCLOSED [45 minutes]
+## Fuzz Challenge 1 [40 minutes]
 
+Build:
 
-## Fuzz Challenge 2 - UNDISCLOSED [50 minutes]
+    gcc fuzz1.c -o fuzz1 -w -lcrypto -lssl
+
+Run:
+
+    ./fuzz1 example.ESIF output.ppm
+
+## Fuzz Challenge 2 [50 minutes]
+
+Build:
+
+    gcc fuzz2.c -o fuzz2 -w -lz
+
+Run (must be run as root):
+
+    ./fuzz2
 
 
 ## Fuzz Challenge 3 - UNDISCLOSED
